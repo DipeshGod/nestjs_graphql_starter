@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateInstitutionInput {
+  description: String!
+  name: String!
+}
+
+type Institution {
+  _id: String!
+
+  """Description of the institutition"""
+  description: String!
+
+  """Name of the institutition"""
+  name: String!
+}
+
+type Mutation {
+  createInstitution(createInstiutionInput: CreateInstitutionInput!): Institution!
+}
+
+type Query {
+  findAllInstitutions: [Institution!]!
+}
