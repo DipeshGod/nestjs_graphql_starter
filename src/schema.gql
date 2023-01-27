@@ -19,8 +19,16 @@ type Institution {
 
 type Mutation {
   createInstitution(createInstiutionInput: CreateInstitutionInput!): Institution!
+  deleteInstitution(institutionId: String!): Institution!
+  updateInstitution(id: String!, updateInstitutionInput: UpdateInstitutionInput!): Institution!
 }
 
 type Query {
   findAllInstitutions: [Institution!]!
+  findInstitutionById(institutionId: String!): Institution!
+}
+
+input UpdateInstitutionInput {
+  description: String
+  name: String
 }
