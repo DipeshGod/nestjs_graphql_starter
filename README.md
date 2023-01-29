@@ -1,6 +1,6 @@
 ## Description
 
-NestJs MongoDB Graphql Starter.
+NestJs MongoDB Graphql Starter with test cases.
 
 ## Installation
 
